@@ -20,7 +20,7 @@ node {
           }
     }
     stage('Build - Push') {
-          docker.withRegistry('https://registry.gitlab.com/jenkins5753330/wordpress', 'reg1') {
+          docker.withRegistry('https://registry.gitlab.com/jenkins5753330/wordpress', 'wordpress') {
               img.push 'latest'
               img.push()
           }
